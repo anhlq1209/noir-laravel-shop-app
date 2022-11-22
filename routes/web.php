@@ -4,8 +4,8 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\CheckOutController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ShopController;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,13 +19,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index', [
-        'page' => 'Home'
-    ]);
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
+
+Route::get('/about', [AboutController::class, 'index'])->name('about');
+
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
 Route::get('/shop', [ShopController::class, 'index'])->name('shop');
+
 Route::get('/shop/{category}', [ShopController::class, 'category'])->name('shop');
 
 Route::get('/product', function () {
@@ -38,7 +39,3 @@ Route::get('/product', function () {
 Route::get('/cart', [CartController::class, 'index'])->name('cart');
 
 Route::get('/checkout', [CheckOutController::class, 'index'])->name('checkout');
-
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-
-Route::get('/about', [AboutController::class, 'index'])->name('about');
