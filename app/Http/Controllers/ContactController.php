@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CheckOutController extends Controller
+class ContactController extends Controller
 {
     //
     public function __construct() {
@@ -12,9 +12,9 @@ class CheckOutController extends Controller
     }
 
     public function index() {
-        return view('checkout', [
-            'page' => 'Checkout',
-            'breadcrumbDetail' => 'Checkout'
+        return view('contact', [
+            'page' => 'Contact',
+            'breadcrumbDetail' => 'Contact Us'
         ]);
     }
 

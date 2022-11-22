@@ -13,7 +13,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 mb-5 ftco-animate">
-						<a href="assets/images/menu-2.jpg" class="image-popup"><img src="assets/images/product-1.jpg" class="img-fluid" alt="Colorlib Template"></a>
+						<a href="/assets/images/menu-2.jpg" class="image-popup"><img src="/assets/images/product-1.jpg" class="img-fluid" alt="Colorlib Template"></a>
 					</div>
 					<div class="col-lg-6 product-details pl-md-5 ftco-animate">
 						<h3>Young Woman Wearing Dress</h3>
@@ -89,7 +89,7 @@
 				<div class="row">
 					<div class="col-sm col-md-6 col-lg ftco-animate">
 						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="assets/images/product-1.jpg" alt="Colorlib Template">
+							<a href="#" class="img-prod"><img class="img-fluid" src="/assets/images/product-1.jpg" alt="Colorlib Template">
 								<span class="status">30%</span>
 								<div class="overlay"></div>
 							</a>
@@ -118,7 +118,7 @@
 					</div>
 					<div class="col-sm col-md-6 col-lg ftco-animate">
 						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="assets/images/product-2.jpg" alt="Colorlib Template">
+							<a href="#" class="img-prod"><img class="img-fluid" src="/assets/images/product-2.jpg" alt="Colorlib Template">
 								<div class="overlay"></div>
 							</a>
 							<div class="text py-3 px-3">
@@ -146,7 +146,7 @@
 					</div>
 					<div class="col-sm col-md-6 col-lg ftco-animate">
 						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="assets/images/product-3.jpg" alt="Colorlib Template">
+							<a href="#" class="img-prod"><img class="img-fluid" src="/assets/images/product-3.jpg" alt="Colorlib Template">
 								<div class="overlay"></div>
 							</a>
 							<div class="text py-3 px-3">
@@ -174,7 +174,7 @@
 					</div>
 					<div class="col-sm col-md-6 col-lg ftco-animate">
 						<div class="product">
-							<a href="#" class="img-prod"><img class="img-fluid" src="assets/images/product-4.jpg" alt="Colorlib Template">
+							<a href="#" class="img-prod"><img class="img-fluid" src="/assets/images/product-4.jpg" alt="Colorlib Template">
 								<div class="overlay"></div>
 							</a>
 							<div class="text py-3 px-3">

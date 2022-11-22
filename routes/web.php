@@ -1,5 +1,11 @@
 <?php
 
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckOutController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\ShopController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,12 +25,8 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/shop', function () {
-    return view('shop', [
-        'page' => 'Shop',
-        'breadcrumbDetail' => 'Collection Products'
-    ]);
-});
+Route::get('/shop', [ShopController::class, 'index'])->name('shop');
+Route::get('/shop/{category}', [ShopController::class, 'category'])->name('shop');
 
 Route::get('/product', function () {
     return view('product-detail', [
@@ -33,30 +35,10 @@ Route::get('/product', function () {
     ]);
 });
 
-Route::get('/cart', function () {
-    return view('cart', [
-        'page' => 'Cart',
-        'breadcrumbDetail' => 'My Cart'
-    ]);
-});
+Route::get('/cart', [CartController::class, 'index'])->name('cart');
 
-Route::get('/checkout', function () {
-    return view('checkout', [
-        'page' => 'Checkout',
-        'breadcrumbDetail' => 'Checkout'
-    ]);
-});
+Route::get('/checkout', [CheckOutController::class, 'index'])->name('checkout');
 
-Route::get('/contact', function () {
-    return view('contact', [
-        'page' => 'Contact',
-        'breadcrumbDetail' => 'Contact Us'
-    ]);
-});
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 
-Route::get('/about', function () {
-    return view('about', [
-        'page' => 'About',
-        'breadcrumbDetail' => 'About Us'
-    ]);
-});
+Route::get('/about', [AboutController::class, 'index'])->name('about');
