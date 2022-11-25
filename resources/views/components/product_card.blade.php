@@ -1,7 +1,7 @@
 <div class="col-md-4">
     <div class="product-item">
         <div class="product-title">
-            <a href="#">{{ $product->name }}</a>
+            <a href="/product/{{ $product->id }}">{{ $product->name }}</a>
             <div class="ratting">
                 <i class="fa fa-star"></i>
                 <i class="fa fa-star"></i>
@@ -15,9 +15,9 @@
                 <img src="{{ $product->imageUrl }}" alt="Product Image">
             </a>
             <div class="product-action">
-                <a href="#"><i class="fa fa-cart-plus"></i></a>
-                <a href="#"><i class="fa fa-heart"></i></a>
-                <a href="#"><i class="fa fa-search"></i></a>
+                <button class="cart-btn"><i class="fa fa-cart-plus"></i></button>
+                <button class=""><i class="fa fa-heart"></i></button>
+                <button class=""><i class="fa fa-search"></i></button>
             </div>
         </div>
         <div class="product-price">

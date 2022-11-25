@@ -770,7 +770,7 @@ h2 {
     opacity: 1; 
 }
 
-.product-item .product-image .product-action a {
+.product-item .product-image .product-action button {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -786,15 +786,15 @@ h2 {
     margin-top: 50px;
 }
 
-.product-item:hover .product-image .product-action a {
+.product-item:hover .product-image .product-action button {
     margin-top: 0;
 }
 
-.product-item .product-image .product-action a:last-child {
+.product-item .product-image .product-action button:last-child {
     margin-right: 0;
 }
 
-.product-item .product-image .product-action a:hover {
+.product-item .product-image .product-action button:hover {
     color: #FF6F61;
     background: #ffffff;
     border: 1px solid #FF6F61;
@@ -1147,6 +1147,17 @@ h2 {
 .product-detail .product-content .quantity .qty {
     display: inline-block;
     font-size: 0;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .product-detail .product-content .quantity button {
@@ -1625,6 +1636,45 @@ h2 {
 .cart-page .cart-summary .cart-btn button:first-child:hover {
     color: #ffffff;
     background: #FF6F61;
+}
+
+.cart-btn {
+    position: relative;
+}
+
+.cart-btn .count {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    display: inline-flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FF6F61;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 400px;
+    transition: all ease 1s;
+    z-index: 2;
+}
+.cart .count {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #ffffff;
+    border-radius: 500px;
+    border: solid 1px #FF6F61; 
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    right: 15px;
+    color: #100b00;
+    transform: translate(50%, -50%);
+    z-index: 2;
 }
 
 

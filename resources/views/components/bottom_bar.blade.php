@@ -22,7 +22,7 @@
                     </a>
                     <a href="/cart" class="btn cart">
                         <i class="fa fa-shopping-cart"></i>
-                        <span>(0)</span>
+                        <span class="count">0</span>
                     </a>
                 </div>
             </div>
