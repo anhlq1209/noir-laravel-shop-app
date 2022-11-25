@@ -258,10 +258,14 @@ $(document).ready(function() {
             cartCountPosition.top < btnPosition.top
             ? cartCountPosition.top
             : cartCountPosition.top;
+
         $(cartBtn)
             .append("<span class='count'>1</span>");
         
-        $(cartBtn).find(".count").each(function(i,count){
+        $(cartBtn)
+            .find(".count")
+            .each(function(i,count){
+
             $(count).offset({
             left: leftPos,
             top: topPos
@@ -273,7 +277,10 @@ $(document).ready(function() {
             800,
             function() {
                 $(this).remove();
-                cartCountValue++;
+                var quantity = $('.qty .quantity');
+
+                cartCountValue+=parseInt(quantity[0].value);
+                quantity[0].value=1;
                 $(cartCount).text(cartCountValue);
             }
             );

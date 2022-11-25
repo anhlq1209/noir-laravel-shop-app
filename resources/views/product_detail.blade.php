@@ -50,7 +50,7 @@
                                             <h4>Quantity:</h4>
                                             <div class="qty">
                                                 <button class="btn-minus"><i class="fa fa-minus"></i></button>
-                                                <input type="number" value="1" style="-webkit-appearance: none;">
+                                                <input class="quantity" type="number" value="1" style="-webkit-appearance: none;">
                                                 <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                             </div>
                                         </div>

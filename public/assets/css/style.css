@@ -1677,6 +1677,10 @@ input[type=number] {
     z-index: 2;
 }
 
+.cart .count {
+    color: #FF6F61 !important;
+}
+
 
 /**********************************/
 /********** Wishlist CSS **********/
