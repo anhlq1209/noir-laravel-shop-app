@@ -1,26 +1,22 @@
 <head>
-  <title>{{ $page }} - WINKEL</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+  <title>E Store - {{ $page }}</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="eCommerce HTML Template Free Download" name="keywords">
+  <meta content="eCommerce HTML Template Free Download" name="description">
 
-  <link rel="stylesheet" href="/assets/css/open-iconic-bootstrap.min.css">
-  <link rel="stylesheet" href="/assets/css/animate.css">
-  
-  <link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="/assets/css/magnific-popup.css">
+  <!-- Favicon -->
+  <link href="/assets/img/favicon.ico" rel="icon">
 
-  <link rel="stylesheet" href="/assets/css/aos.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Source+Code+Pro:700,900&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/css/ionicons.min.css">
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <link href="/assets/lib/slick/slick.css" rel="stylesheet">
+  <link href="/assets/lib/slick/slick-theme.css" rel="stylesheet">
 
-  <link rel="stylesheet" href="/assets/css/bootstrap-datepicker.css">
-  <link rel="stylesheet" href="/assets/css/jquery.timepicker.css">
-
-  
-  <link rel="stylesheet" href="/assets/css/flaticon.css">
-  <link rel="stylesheet" href="/assets/css/icomoon.css">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- Template Stylesheet -->
+  <link href="/assets/css/style.css" rel="stylesheet">
 </head>

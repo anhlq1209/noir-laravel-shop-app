@@ -14,14 +14,13 @@ class ShopController extends Controller
     }
 
     public function index() {
-        $products = DB::table('products')->paginate(12);
-        $categories = DB::select('select * from categories');
+        $products = DB::table('products')->paginate(9);
+        // $categories = DB::select('select * from categories');
 
         return view('shop', [
             'page' => 'Shop',
-            'breadcrumbDetail' => 'Collection Products',
             'products' => $products,
-            'categories' => $categories
+            // 'categories' => $categories
         ]);
     }
 

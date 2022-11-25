@@ -20,12 +20,12 @@
         @include('components.breadcrumb')
         <!-- Breadcrumb End -->
         
-        <!-- Cart Start -->
-        <div class="cart-page">
+        <!-- Wishlist Start -->
+        <div class="wishlist-page">
             <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="cart-page-inner">
+                <div class="wishlist-page-inner">
+                    <div class="row">
+                        <div class="col-md-12">
                             <div class="table-responsive">
                                 <table class="table table-bordered">
                                     <thead class="thead-dark">
@@ -33,7 +33,7 @@
                                             <th>Product</th>
                                             <th>Price</th>
                                             <th>Quantity</th>
-                                            <th>Total</th>
+                                            <th>Add to Cart</th>
                                             <th>Remove</th>
                                         </tr>
                                     </thead>
@@ -41,7 +41,7 @@
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="/assets/img/product-1.jpg" alt="Image"></a>
+                                                    <a href="#"><img src="/assets/img/product-6.jpg" alt="Image"></a>
                                                     <p>Product Name</p>
                                                 </div>
                                             </td>
@@ -53,13 +53,13 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td><button class="btn-cart">Add to Cart</button></td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="/assets/img/product-2.jpg" alt="Image"></a>
+                                                    <a href="#"><img src="/assets/img/product-7.jpg" alt="Image"></a>
                                                     <p>Product Name</p>
                                                 </div>
                                             </td>
@@ -71,13 +71,13 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td><button class="btn-cart">Add to Cart</button></td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="/assets/img/product-3.jpg" alt="Image"></a>
+                                                    <a href="#"><img src="/assets/img/product-8.jpg" alt="Image"></a>
                                                     <p>Product Name</p>
                                                 </div>
                                             </td>
@@ -89,13 +89,13 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td><button class="btn-cart">Add to Cart</button></td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="/assets/img/product-4.jpg" alt="Image"></a>
+                                                    <a href="#"><img src="/assets/img/product-9.jpg" alt="Image"></a>
                                                     <p>Product Name</p>
                                                 </div>
                                             </td>
@@ -107,13 +107,13 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td><button class="btn-cart">Add to Cart</button></td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                         <tr>
                                             <td>
                                                 <div class="img">
-                                                    <a href="#"><img src="/assets/img/product-5.jpg" alt="Image"></a>
+                                                    <a href="#"><img src="/assets/img/product-10.jpg" alt="Image"></a>
                                                     <p>Product Name</p>
                                                 </div>
                                             </td>
@@ -125,7 +125,7 @@
                                                     <button class="btn-plus"><i class="fa fa-plus"></i></button>
                                                 </div>
                                             </td>
-                                            <td>$99</td>
+                                            <td><button class="btn-cart">Add to Cart</button></td>
                                             <td><button><i class="fa fa-trash"></i></button></td>
                                         </tr>
                                     </tbody>
@@ -133,36 +133,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
-                        <div class="cart-page-inner">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="coupon">
-                                        <input type="text" placeholder="Coupon Code">
-                                        <button>Apply Code</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-12">
-                                    <div class="cart-summary">
-                                        <div class="cart-content">
-                                            <h1>Cart Summary</h1>
-                                            <p>Sub Total<span>$99</span></p>
-                                            <p>Shipping Cost<span>$1</span></p>
-                                            <h2>Grand Total<span>$100</span></h2>
-                                        </div>
-                                        <div class="cart-btn">
-                                            <button>Update Cart</button>
-                                            <button>Checkout</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
-        <!-- Cart End -->
+        <!-- Wishlist End -->
         
         <!-- Footer Start -->
         @include('components.footer')
@@ -177,6 +151,6 @@
         
         <!-- JavaScript Libraries and Template Javascript -->
         @include('layouts.foot')
-
+        
     </body>
 </html>
